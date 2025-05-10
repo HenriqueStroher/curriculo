@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #DDD;
+}
+
+.container {
+    background-color: #eeecec;
+    max-width: 1100px;
+    padding: 15px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 1px #888;
+    border: 5px solid #8a8686;
+}
+
+.inicio {
+    display: flex;
+    gap: 37%;
+}
+
+
+.inicio img {
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 35px 1px #888;
+}
+
+.inicio h1{
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 45px;
+}
+
+.dadosP, .objetivo {
+    margin-left: 35px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+legend {
+    margin-left: 20px;
+    padding: 3px;
+    font-size: 25px;
+}
+
+section {
+    padding: 5px;
+}
+
+summary {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+details {
+    background-color: #DDD;
+}
+
+ul {
+    padding-left: 45px;
+    font-size: 18px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.imagens {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #DDD;
+    border-bottom: 1px dashed #DDD;
+    text-align: center;
+}
+
+.imagens img {
+    height: 50px;
+    margin: 0px 10px;
+}
+
+.rodape {
+    border-bottom: 8px solid #393939;
+    background-color: rgb(207, 205, 205);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px 1px #888;
+}
+
+/* Parte Mobile */
+@media screen and (max-width: 500px) {
+    .container {
+        width:100%;
+        margin: 20px auto 20px auto;
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .inicio img {
+        margin: 20px 0 10px 0;
+    }
+
+    .inicio h1 {
+        margin: 5px 0;
+        font-size: 30px;
+    }
+
+    summary, ul, .dadosP {
+        font-size: 15px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    .rodape {
+        font-size: 15px;
+    }
+
+}
