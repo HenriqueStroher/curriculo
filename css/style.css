@@ -75,19 +75,6 @@ li {
     padding-bottom: 10px;
 }
 
-.imagens {
-    padding: 25px 0;
-    margin: 25px 0;
-    border-top: 1px dashed #DDD;
-    border-bottom: 1px dashed #DDD;
-    text-align: center;
-}
-
-.imagens img {
-    height: 50px;
-    margin: 0px 10px;
-}
-
 .rodape {
     border-bottom: 8px solid #393939;
     background-color: rgb(207, 205, 205);
@@ -95,6 +82,24 @@ li {
     text-align: center;
     border-radius: 10px;
     box-shadow: 8px 8px 20px 1px #888;
+}
+
+#img-port {
+    font-size: 4rem;
+    color: #888;
+    padding: 0.3rem;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+#img-port:hover {
+    opacity: 1;
+}
+
+.fa-buttons {
+    text-align: center;
+    padding: 1rem;
 }
 
 /* Parte Mobile */
@@ -131,6 +136,15 @@ li {
 
     .rodape {
         font-size: 15px;
+    }
+
+    #img-port {
+        font-size: 3rem;
+    }
+
+    .fa-buttons {
+        display: flex;
+        flex-direction: column;
     }
 
 }
